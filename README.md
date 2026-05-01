@@ -180,3 +180,4 @@ Proprietary — magicpin AI Challenge submission.
 
 Team: Vera Challenger  
 Email: dinesh@dins.in
+# vera-ai-challenge
