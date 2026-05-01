@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: vera-bot
+    runtime: python
+    pythonVersion: 3.11
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn bot:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        scope: service
+        sync: false
+    healthCheckPath: /v1/healthz
+    healthCheckInterval: 30
